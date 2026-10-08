@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://compareyourgear.com/sitemap.xml

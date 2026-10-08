@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wah Pedals Compared: Cry Baby, Vox, Morley, and More | Gear Compare</title>
+<meta name="description" content="Wah Pedals Compared: Cry Baby, Vox, Morley, and More — honest gear comparisons and buying guides.">
+<style>
+:root {
+  --ink: #1c1a17;
+  --ink-soft: #5a5450;
+  --paper: #faf6f0;
+  --card: #ffffff;
+  --accent: #c1502e;
+  --accent-dark: #9c3d21;
+  --line: #e7e0d6;
+  --header: #22201d;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: 'Georgia', 'Iowan Old Style', serif;
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.6;
+}
+a { color: var(--accent-dark); text-decoration: none; }
+a:hover { text-decoration: underline; }
+header.site {
+  background: var(--header);
+  color: #f2ede4;
+  padding: 18px 24px;
+}
+header.site .wrap {
+  max-width: 980px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+header.site .logo {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: -0.5px;
+  color: #f2ede4;
+}
+header.site .logo span { color: var(--accent); }
+header.site nav a {
+  color: #cfc7ba;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 22px;
+  text-decoration: none;
+}
+header.site nav a:hover { color: #fff; text-decoration: none; }
+.hero {
+  background: var(--header);
+  color: #f2ede4;
+  padding: 50px 24px 60px;
+  text-align: center;
+}
+.hero h1 {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 800;
+  font-size: 38px;
+  letter-spacing: -1px;
+  margin: 0 0 10px;
+}
+.hero p {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #cfc7ba;
+  font-size: 17px;
+  max-width: 560px;
+  margin: 0 auto;
+}
+main {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+}
+.eyebrow {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--accent);
+}
+.section-title {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+  letter-spacing: -0.5px;
+  margin: 6px 0 8px;
+}
+.section-desc {
+  color: var(--ink-soft);
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 15px;
+  max-width: 620px;
+  margin-bottom: 30px;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 18px;
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 20px 20px 18px;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+.card:hover { box-shadow: 0 6px 18px rgba(0,0,0,0.08); transform: translateY(-2px); }
+.card .cat {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--accent);
+  margin-bottom: 6px;
+  display: block;
+}
+.card h3 {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 17px;
+  margin: 0 0 8px;
+  line-height: 1.3;
+}
+.card h3 a { color: var(--ink); }
+.card p {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 13.5px;
+  color: var(--ink-soft);
+  margin: 0 0 10px;
+}
+.card .readmore {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+}
+.home-sections { display: flex; flex-direction: column; gap: 50px; }
+.breadcrumb {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 13px;
+  color: var(--ink-soft);
+  margin-bottom: 18px;
+}
+.breadcrumb a { color: var(--ink-soft); }
+article {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 40px 50px;
+}
+article h1 {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 800;
+  font-size: 32px;
+  letter-spacing: -0.5px;
+  margin-top: 0;
+}
+article h2 {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  margin-top: 40px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 8px;
+}
+article h3 {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+article strong { color: var(--ink); }
+article table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 14px;
+}
+article th, article td {
+  border: 1px solid var(--line);
+  padding: 8px 12px;
+  text-align: left;
+}
+article th {
+  background: #f2ede2;
+  font-weight: 700;
+}
+article tr:nth-child(even) td { background: #fbf8f3; }
+article code {
+  background: #f2ede2;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-size: 13px;
+}
+.disclosure {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 12.5px;
+  color: var(--ink-soft);
+  border-top: 1px solid var(--line);
+  margin-top: 40px;
+  padding-top: 16px;
+}
+footer.site {
+  background: var(--header);
+  color: #cfc7ba;
+  text-align: center;
+  padding: 30px 24px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 13px;
+}
+footer.site a { color: #f2ede4; }
+</style>
+</head>
+<body>
+<header class="site"><div class="wrap">
+<a class="logo" href="/" style="text-decoration:none;">Gear<span>Compare</span></a>
+<nav><a href="/buy-new-or-used/">Buy New or Used?</a><a href="/financing-guide/">Financing Guide</a><a href="/deep-dives/">Deep Dives</a></nav>
+</div></header>
+<main>
+<div class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/deep-dives/">Deep Dives</a> &rsaquo; Wah Pedals Compared: Cry Baby, Vox, Morley, and More</div>
+<article><h1>Wah Pedals Compared: Cry Baby, Vox, Morley, and More</h1>
+<p>Wah pedals all chase the same basic effect — a sweeping bandpass filter that mimics a crying or vocal-like tone — but the specific circuit, switching mechanism, and voicing behind each major brand genuinely differ. Here's how the most significant players compare, and what each one is actually known for.</p>
+<p><strong>Quick verdict:</strong> Start with the Dunlop Cry Baby GCB95 ($80-90) if you want the industry-standard sound and the lowest-risk choice — it's the pedal most other wah pedals get compared against. Choose Vox's V847-A if you want a warmer, more vintage-leaning voice specifically. Choose Morley if pedal-switch reliability matters more to you than exact tone, since its optical circuit never wears out or gets scratchy the way a mechanical switch can.</p>
+<h2>At a Glance</h2>
+<table>
+<thead>
+<tr>
+<th>Pedal</th>
+<th>Price</th>
+<th>Known For</th>
+<th>Switching</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dunlop Cry Baby GCB95</td>
+<td>$80-90</td>
+<td>The industry-standard wah sound; best-selling wah pedal ever made</td>
+<td>Mechanical switch</td>
+</tr>
+<tr>
+<td>Vox V847-A</td>
+<td>$100-110</td>
+<td>Warmer, more vintage-voiced tone; closest lineage to the original 1967 wah</td>
+<td>Mechanical switch, true bypass</td>
+</tr>
+<tr>
+<td>Morley 20/20 / Bad Horsie (Steve Vai)</td>
+<td>$170-200</td>
+<td>Switchless optical circuitry — no pot to wear out or go scratchy</td>
+<td>Optical, switchless</td>
+</tr>
+<tr>
+<td>Dunlop 535Q Multi-Wah</td>
+<td>$150-180</td>
+<td>Six selectable frequency ranges plus variable Q and boost, for players who want one pedal to cover many tones</td>
+<td>Mechanical switch</td>
+</tr>
+<tr>
+<td>Fulltone Clyde Deluxe</td>
+<td>$195-230</td>
+<td>Boutique-tier recreation of the original Vox Clyde McCoy circuit; premium components</td>
+<td>Mechanical switch</td>
+</tr>
+<tr>
+<td>Ibanez WH10/Weeping Demon</td>
+<td>$100-150</td>
+<td>Wide, aggressive sweep favored by rock and metal players</td>
+<td>Mechanical switch</td>
+</tr>
+<tr>
+<td>Xotic XW-1</td>
+<td>$220-240</td>
+<td>Bass control plus adjustable bias and Q — the most tunable "boutique" option on this list</td>
+<td>True bypass</td>
+</tr>
+</tbody>
+</table>
+<h2>The Origin Story Behind Every Wah on This List</h2>
+<p>Every wah pedal on this page traces back to one accident. In 1966, an engineer named Brad Plunkett at the Thomas Organ Company was trying to replace an expensive mid-range switch in a Vox amplifier with a cheaper potentiometer — and stumbled into a sweeping filter effect instead. Thomas Organ marketed the result as the <strong>Clyde McCoy Wah-Wah</strong>, named after a jazz trumpet player known for a similar "crying" effect using a mute, aimed initially at brass and keyboard players rather than guitarists.</p>
+<p>Here's the detail that shaped the entire category: Thomas Organ never trademarked the name "Cry Baby" when it rebranded the pedal for guitarists shortly after. That oversight let any manufacturer use the name once Thomas Organ folded in 1981 — and <strong>Dunlop</strong> picked it up in 1982, relaunching it as the GCB95 with an upgraded Fasel inductor. That single missed trademark is the reason Dunlop, not Vox, ended up owning the wah category for the next four decades.</p>
+<h2>Dunlop Cry Baby GCB95 — The Industry Standard</h2>
+<p>The GCB95 is the pedal every other wah gets measured against, and for good reason: it's the direct continuation of the original circuit Dunlop rescued from Thomas Organ, refined with a die-cast housing and, since 2003, the classic red Fasel inductor that most players consider tonally superior to the original black one. It's widely cited as the best-selling guitar effects pedal of all time, in any category — not just wah.</p>
+<p><strong>Known for:</strong> being the default, no-surprises choice. If you've never owned a wah, this is where nearly every guide and most working musicians tell you to start.</p>
+<h2>Vox V847-A — The Closest Lineage to the Original</h2>
+<p>Where the Cry Baby represents Dunlop's take on the circuit, the Vox V847-A is the modern continuation of Vox's own original wah lineage — the same company whose amplifier project accidentally spawned the effect in the first place. It's generally described as warmer and more vintage-voiced than the Cry Baby's more aggressive default character, with true bypass switching and a sturdy metal housing built to the same broad spec as the pedals Jimi Hendrix and Eric Clapton popularized in the late 1960s.</p>
+<p><strong>Known for:</strong> vintage authenticity — if you want the wah that's closest in spirit to the pedal used on <em>Voodoo Child</em> or <em>Tales of Brave Ulysses</em>, this is the practical modern option.</p>
+<h2>Morley — Solving Wah's One Real Design Flaw</h2>
+<p>Morley, founded in the 1960s by brothers Raymond and Marvin Lubow, took a fundamentally different engineering approach starting in 1994: instead of a mechanical potentiometer (the pot that every Dunlop and Vox wah relies on), Morley pedals use <strong>electro-optical circuitry</strong> — a light-based resistor that physically can't wear out or develop the scratchy noise a worn potentiometer eventually produces. Morley also popularized "switchless" operation, where the pedal engages automatically the moment you rock the treadle, rather than requiring a separate click to turn it on.</p>
+<p><strong>Known for:</strong> durability and reliability over raw vintage authenticity — the Steve Vai signature "Bad Horsie" and the 20/20 Classic are the most recognizable models, both aimed at players who want a wah that survives years of hard touring use without the switch or pot degrading.</p>
+<h2>Dunlop 535Q Multi-Wah — The Do-Everything Option</h2>
+<p>The 535Q takes the standard Cry Baby circuit and adds six selectable frequency center ranges plus a variable Q control (which adjusts how narrow or wide the sweep is) and a built-in volume boost. It's consistently rated as the most versatile wah on the market, letting one pedal cover tones from a classic vocal wah to a tighter, more aggressive funk or metal sweep.</p>
+<p><strong>Known for:</strong> flexibility — if you play multiple genres and don't want to own three different wah pedals, this is the one-pedal answer.</p>
+<h2>Fulltone Clyde Deluxe — The Boutique Recreation</h2>
+<p>Fulltone built its reputation specifically on recreating the original Vox Clyde McCoy circuit with premium components and tighter manufacturing tolerances than the mass-market Dunlop or Vox reissues. It regularly shows up as the "premium pick" across comparison guides, aimed at players who've already owned a Cry Baby or V847 and want to hear what the circuit sounds like built to a higher standard.</p>
+<p><strong>Known for:</strong> being the step up once you know you want a classic-voiced wah and are willing to pay boutique prices for refinement rather than a different tone entirely.</p>
+<h2>Ibanez WH10 / Weeping Demon — The Rock and Metal Choice</h2>
+<p>Ibanez took a different tack from the vintage-faithful crowd, voicing its wah pedals with a wider, more aggressive sweep that cuts through distorted, high-gain rock and metal tones more assertively than a vintage-voiced Cry Baby or Vox. The Weeping Demon in particular gained a following among hard rock and metal players specifically because it doesn't get lost under heavy distortion the way a more subtle vintage wah can.</p>
+<p><strong>Known for:</strong> aggression — the go-to recommendation whenever a guide specifically calls out "wah for metal" as its own category.</p>
+<h2>Xotic XW-1 — The Tunable Boutique Option</h2>
+<p>The XW-1 stands out by giving players direct control over bias and Q, plus a dedicated bass control most wah pedals don't offer at all — letting you dial in low-end response rather than accepting whatever the fixed circuit gives you. It's frequently cited as an "editor's choice" pick precisely because of that extra tunability, at a price point that puts it alongside the Fulltone Clyde Deluxe as one of the more premium options here.</p>
+<p><strong>Known for:</strong> adjustability — the pedal for players who've tried a standard wah and want to fine-tune the exact frequency response rather than live with a fixed voicing.</p>
+<h2>Final Recommendation</h2>
+<p>If this is your first wah, start with the <strong>Dunlop Cry Baby GCB95</strong> — it's the reference point every other pedal on this list gets compared to, and at under $90 it's a low-risk way to find out if you even like playing with a wah in your signal chain. If you already know you want a specific character — vintage warmth (Vox V847-A), bulletproof reliability (Morley), maximum versatility (535Q), or metal-ready aggression (Ibanez) — jump straight to that pick instead.</p>
+<p><em>This page contains affiliate links. If you purchase through them, we may earn a commission at no extra cost to you.</em></p>
+<h2>FAQ</h2>
+<p><strong>Why is the Dunlop Cry Baby called that instead of a Vox name, if Vox invented the wah?</strong>
+Thomas Organ (Vox's US distributor at the time) never trademarked the "Cry Baby" name when it introduced the pedal in the late 1960s. When the company folded in 1981, that left the name open, and Dunlop acquired and trademarked it in 1982 — which is why the most famous wah name today belongs to Dunlop rather than Vox.</p>
+<p><strong>What's the actual tonal difference between a Dunlop Cry Baby and a Vox wah?</strong>
+Most comparisons describe the Cry Baby's stock voicing as more aggressive and modern, while the Vox V847-A leans warmer and closer to the original late-1960s tone. Both are genuinely usable across most genres; the difference is more a matter of character than one being objectively better.</p>
+<p><strong>Is a Morley wah worth the extra cost over a Cry Baby?</strong>
+If pedal reliability under heavy live use matters to you, yes — the optical circuit avoids the scratchy-pot problem mechanical wahs eventually develop. If you're mainly playing at home or in the studio, that durability advantage matters less, and a standard Cry Baby will get you very similar tonal territory for less money.</p>
+<p><strong>What does "true bypass" mean on a wah pedal, and does it matter?</strong>
+True bypass means the pedal's circuitry is completely out of the signal path when switched off, avoiding any tonal coloration from the wah's electronics when you're not using it. It matters more on pedalboards with several effects chained together, where cumulative signal loss or noise becomes noticeable.</p>
+<p><strong>Which wah pedal is best for someone who plays mostly high-gain rock or metal?</strong>
+The Ibanez WH10 or Weeping Demon are the most consistently recommended options specifically for that use case, thanks to a wider, more aggressive sweep that stays audible under heavy distortion.</p></article>
+</main>
+<footer class="site">
+<p>Gear Compare is an independent buying-guide site. We may earn a commission from qualifying purchases through links on this site, at no extra cost to you.</p>
+<p>&copy; 2026 Gear Compare</p>
+</footer>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4bc70e2c01a94c73b74392e4234840661791215815920" integrity="sha512-L0ha0OXavK/8okipN9F8BtP84dg9DUhPERbBXzwI6dgTA55d2+yweo3pn5CSFYs45/r8md2+xvUPtTdvTNRfjA==" data-cf-beacon='{"version":"2024.11.0","token":"b77ad34a835043d88af843216c9ac42e","r":1,"spa":2}' crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a4789524bdcd8095',t:'MTc5MTQ5ODU0Nw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

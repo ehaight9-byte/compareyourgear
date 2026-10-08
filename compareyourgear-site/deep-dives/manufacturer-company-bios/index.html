@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manufacturer Bios: The Companies Behind the Gear | Gear Compare</title>
+<meta name="description" content="Manufacturer Bios: The Companies Behind the Gear — honest gear comparisons and buying guides.">
+<style>
+:root {
+  --ink: #1c1a17;
+  --ink-soft: #5a5450;
+  --paper: #faf6f0;
+  --card: #ffffff;
+  --accent: #c1502e;
+  --accent-dark: #9c3d21;
+  --line: #e7e0d6;
+  --header: #22201d;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: 'Georgia', 'Iowan Old Style', serif;
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.6;
+}
+a { color: var(--accent-dark); text-decoration: none; }
+a:hover { text-decoration: underline; }
+header.site {
+  background: var(--header);
+  color: #f2ede4;
+  padding: 18px 24px;
+}
+header.site .wrap {
+  max-width: 980px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+header.site .logo {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: -0.5px;
+  color: #f2ede4;
+}
+header.site .logo span { color: var(--accent); }
+header.site nav a {
+  color: #cfc7ba;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 22px;
+  text-decoration: none;
+}
+header.site nav a:hover { color: #fff; text-decoration: none; }
+.hero {
+  background: var(--header);
+  color: #f2ede4;
+  padding: 50px 24px 60px;
+  text-align: center;
+}
+.hero h1 {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 800;
+  font-size: 38px;
+  letter-spacing: -1px;
+  margin: 0 0 10px;
+}
+.hero p {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #cfc7ba;
+  font-size: 17px;
+  max-width: 560px;
+  margin: 0 auto;
+}
+main {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+}
+.eyebrow {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--accent);
+}
+.section-title {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+  letter-spacing: -0.5px;
+  margin: 6px 0 8px;
+}
+.section-desc {
+  color: var(--ink-soft);
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 15px;
+  max-width: 620px;
+  margin-bottom: 30px;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 18px;
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 20px 20px 18px;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+.card:hover { box-shadow: 0 6px 18px rgba(0,0,0,0.08); transform: translateY(-2px); }
+.card .cat {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--accent);
+  margin-bottom: 6px;
+  display: block;
+}
+.card h3 {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 17px;
+  margin: 0 0 8px;
+  line-height: 1.3;
+}
+.card h3 a { color: var(--ink); }
+.card p {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 13.5px;
+  color: var(--ink-soft);
+  margin: 0 0 10px;
+}
+.card .readmore {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+}
+.home-sections { display: flex; flex-direction: column; gap: 50px; }
+.breadcrumb {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 13px;
+  color: var(--ink-soft);
+  margin-bottom: 18px;
+}
+.breadcrumb a { color: var(--ink-soft); }
+article {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 40px 50px;
+}
+article h1 {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 800;
+  font-size: 32px;
+  letter-spacing: -0.5px;
+  margin-top: 0;
+}
+article h2 {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  margin-top: 40px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 8px;
+}
+article h3 {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+article strong { color: var(--ink); }
+article table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 14px;
+}
+article th, article td {
+  border: 1px solid var(--line);
+  padding: 8px 12px;
+  text-align: left;
+}
+article th {
+  background: #f2ede2;
+  font-weight: 700;
+}
+article tr:nth-child(even) td { background: #fbf8f3; }
+article code {
+  background: #f2ede2;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-size: 13px;
+}
+.disclosure {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 12.5px;
+  color: var(--ink-soft);
+  border-top: 1px solid var(--line);
+  margin-top: 40px;
+  padding-top: 16px;
+}
+footer.site {
+  background: var(--header);
+  color: #cfc7ba;
+  text-align: center;
+  padding: 30px 24px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 13px;
+}
+footer.site a { color: #f2ede4; }
+</style>
+</head>
+<body>
+<header class="site"><div class="wrap">
+<a class="logo" href="/" style="text-decoration:none;">Gear<span>Compare</span></a>
+<nav><a href="/buy-new-or-used/">Buy New or Used?</a><a href="/financing-guide/">Financing Guide</a><a href="/deep-dives/">Deep Dives</a></nav>
+</div></header>
+<main>
+<div class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/deep-dives/">Deep Dives</a> &rsaquo; Manufacturer Bios: The Companies Behind the Gear</div>
+<article><h1>Manufacturer Bios: The Companies Behind the Gear</h1>
+<p>Full histories for every pedal, guitar, and amp maker covered across our buying guides — who founded them, when, and how each became a household name in music gear.</p>
+<h2>Pedals</h2>
+<h3>Boss</h3>
+<p><strong>Founded:</strong> 1973, Osaka, Japan (a Roland-affiliated brand rooted in MEG Electronics)
+<strong>First product:</strong> B-100 acoustic guitar microphone/preamp (1974)
+<strong>First pedal:</strong> CE-1 Chorus Ensemble (1976), adapted from the Roland JC-120 amplifier's built-in chorus circuit</p>
+<p>Boss is technically a brand of Roland Corporation rather than a standalone company, but its identity is distinct enough that most players think of it separately. The compact pedal enclosure format Boss introduced in 1977 — with the OD-1 Overdrive, PH-1 Phaser, and SP-1 Spectrum — became the industry standard footprint that most stompboxes still use today. Boss extended its warranty from one year to five across the entire line in 2014, reflecting the brand's reputation for road-tested durability. Best-known models beyond the DS-1 and SD-1 include the MT-2 Metal Zone and the DD-series digital delays.</p>
+<h3>ProCo (ProCo Sound)</h3>
+<p><strong>Founded:</strong> 1974, Kalamazoo, Michigan, by Charlie Wicks
+<strong>Key engineers:</strong> Scott Burnham and Steve Kiraly</p>
+<p>ProCo began not as a pedal company but as a maker of speaker cabinets, mic cables, and stage snakes, growing out of the ashes of a defunct local music co-op called The Sound Factory. Kalamazoo's location — roughly halfway between Chicago and Detroit — meant touring bands regularly passed through, giving ProCo early exposure to working musicians. The RAT itself was discovered almost by accident: engineer Scott Burnham used the wrong-value resistor while tinkering with an op-amp circuit in the company's basement, producing a distortion sound he'd never heard before. ProCo built its identity almost entirely around the RAT and its variants (Turbo RAT, You Dirty Rat, RAT2) rather than a broad product catalog.</p>
+<h3>Ibanez (Hoshino Gakki)</h3>
+<p><strong>Founded:</strong> 1908, Nagoya, Japan, as Hoshino Shoten (a bookstore chain with a musical instrument sales division)
+<strong>Guitar brand established:</strong> 1929-1935, taking the "Ibanez" name from Spanish luthier Salvador Ibáñez</p>
+<p>Ibanez has one of the most unusual origin stories in the industry — it began as a bookstore. The company's Hoshino Gakki division started importing high-end Spanish classical guitars in the late 1920s, and after the original Spanish workshop was destroyed during the Spanish Civil War, Hoshino Gakki bought the rights to the Ibanez name and began building guitars itself. The "modern era" of Ibanez guitars is generally dated to 1957, and the brand spent the 1960s and early 1970s building close copies of Fender and Gibson designs — a period retroactively known as the "lawsuit era" after Gibson's parent company sued over headstock design similarities in the mid-1970s. Following that settlement, Ibanez pivoted toward original designs, and its pedal business (Tube Screamer included) grew out of a partnership with Japanese electronics maker Nissin/Maxon in the mid-1970s. Today, Ibanez is among the world's best-selling guitar brands alongside Gibson, Fender, and PRS.</p>
+<h3>Electro-Harmonix (EHX)</h3>
+<p><strong>Founded:</strong> October 1968, New York City, by Mike Matthews
+<strong>Starting capital:</strong> $1,000</p>
+<p>Mike Matthews quit a sales job at IBM to found Electro-Harmonix, initially building the LPB-1 Linear Power Booster before creating the Muff Fuzz (1969) and its four-transistor successor, the Big Muff Pi, the same year. Early customers included Jimi Hendrix, who bought one of the first units at Manny's Music in New York. EHX grew fast — by 1978 the company was grossing $5 million annually with offices in New York, Toronto, London, and Tokyo — but went bankrupt in 1984. Matthews pivoted to importing Soviet-made vacuum tubes and electronics under the Sovtek brand, using the proceeds to eventually reclaim the Electro-Harmonix name and resume pedal production, first in Russia through the 1990s and back in the United States starting in 2000. EHX's vacuum tubes are still used inside amplifiers made by Fender, Peavey, Mesa Boogie, and Marshall today.</p>
+<h2>Guitars</h2>
+<h3>Gibson</h3>
+<p><strong>Founded:</strong> 1902, Kalamazoo, Michigan, incorporated as the Gibson Mandolin-Guitar Mfg. Co. Ltd.
+<strong>Founder:</strong> Orville Gibson (began selling instruments from a one-room workshop in 1894)</p>
+<p>Orville Gibson developed an early mandolin design in 1898 known for a distinctive sound quality, and the company formally incorporated to market his instruments in 1902. Gibson died in 1918, but the company he founded went on to develop the archtop guitar, the first commercially successful humbucker pickup (1957's "PAF"), and the Les Paul — one of the two most influential solid-body electric guitar designs ever made. Gibson has changed ownership multiple times since, including a period under Norlin (1969-1986) often cited by collectors as a quality low point, and a 2018 bankruptcy restructuring. It remains headquartered in Nashville, Tennessee today, having moved its main production out of Kalamazoo in 1984.</p>
+<h3>Fender</h3>
+<p><strong>Founded:</strong> 1946, Fullerton, California, as the Fender Electric Instrument Manufacturing Company
+<strong>Founder:</strong> Clarence Leonidas "Leo" Fender</p>
+<p>Leo Fender partnered with Clayton "Doc" Kauffman before founding his namesake company alone after Kauffman lost confidence in the guitar business. Fender released the Esquire in 1950 (the company's first original guitar), followed shortly by the Telecaster and, in 1954, the Stratocaster — together establishing the solid-body electric guitar as a mainstream instrument alongside Gibson's competing designs. Leo Fender sold the company to CBS in 1965 and it changed hands several more times, including a 1985 buyout that created the modern Fender Musical Instruments Corporation (FMIC). Fender today also owns Squier, Gretsch, Jackson, Charvel, EVH, and Bigsby.</p>
+<h3>Epiphone</h3>
+<p>Epiphone predates Gibson's ownership by decades, originally founded as a Greek-American instrument maker (Epaminondas "Epi" Stathopoulo's family business) known for banjos and archtop guitars in the early 20th century. Gibson acquired Epiphone in 1957, initially continuing it as a higher-end parallel line before repositioning it — starting in the 1970s and more firmly from the 1990s onward — as Gibson's official budget/import brand. Epiphone has been manufactured across multiple countries over the decades (Japan, Korea, China, and now primarily Indonesia and China), a shifting production history that shapes a lot of the "which era is best" discussion among collectors and players today.</p>
+<h3>Squier</h3>
+<p><strong>Founded:</strong> 1890, Battle Creek, Michigan, as the V.C. Squier Company
+<strong>Founder:</strong> Victor Carroll Squier</p>
+<p>Squier began as a string manufacturer — violin, banjo, and guitar strings — not a guitar maker at all. The V.C. Squier Company became an official supplier to Fender in the early 1950s and was acquired outright by Fender in 1965, the same year Leo Fender sold the parent company to CBS. Squier strings continued under that name until roughly 1975, when Fender retired the brand entirely. It sat dormant until 1982, when Fender revived "Squier" specifically as a name for lower-priced, import-built versions of its Stratocaster and Telecaster designs — a direct response to increasingly high-quality, low-cost Japanese copies flooding the market at the time.</p>
+<h2>Amps</h2>
+<h3>Marshall Amplification</h3>
+<p><strong>Founded:</strong> 1962, London, England
+<strong>Founder:</strong> Jim Marshall</p>
+<p>Jim Marshall was a drummer and drum teacher who opened a music shop, Jim Marshall &amp; Son, in 1960. His drum students introduced him to a wave of guitarists — including Pete Townshend and Ritchie Blackmore — who wanted a louder, more aggressive amp sound than the expensive, hard-to-import American Fender amps of the era. Working with service technician Ken Bran (a former aircraft engineer) and technician Dudley Craven, Marshall's team built the JTM45 in 1962-63, explicitly modeled on the Fender Bassman but voiced to be grittier and more powerful. Marshall stayed under family ownership for over 60 years before being sold to The Marshall Group AB in 2023, and then to HongShan Capital Group in 2025.</p>
+<h3>Vox (Jennings Musical Industries)</h3>
+<p><strong>Founded:</strong> 1957, Dartford, Kent, England (as Jennings Musical Industries, evolving from earlier Jennings companies dating to 1949)
+<strong>Founder:</strong> Thomas Walter "Tom" Jennings</p>
+<p>Tom Jennings ran an accordion and organ business before recognizing an opportunity: a British trade embargo made American Fender amps expensive and hard to get, leaving an opening for a homegrown alternative. He recruited engineer Dick Denney, a wartime acquaintance, to design a purpose-built guitar amplifier from scratch rather than adapting existing tube-manufacturer reference circuits — an approach that gave the resulting AC15 (1958) and AC30 (1959) their distinctive character. Jennings sold a controlling stake in JMI in 1964 to raise capital and left the company in 1967, around the same time Marshall overtook Vox as Britain's dominant amp maker. The original JMI folded in 1968; the Vox brand has been owned by Japanese electronics company Korg since 1992.</p>
+<h3>Peavey Electronics</h3>
+<p><strong>Founded:</strong> 1964, Meridian, Mississippi
+<strong>Founder:</strong> Hartley Peavey</p>
+<p>Hartley Peavey built his first amplifier from surplus parts as a teenager in the 1950s, initially hoping to become a musician himself rather than a manufacturer — he was reportedly kicked out of his own band despite building all of its equipment. He formally founded Peavey Electronics a decade later, and the company grew into one of the largest independent musical equipment manufacturers in the world, known especially for durable, affordable gear. Peavey's biggest product-line moment came through a direct collaboration with Eddie Van Halen, resulting in the 5150 amplifier (1992); after the Van Halen partnership ended in 2004, Peavey renamed the same amp the 6505 to mark the company's 40th anniversary (1965-2005), while Van Halen took the "5150" name to a new amp line built with Fender's EVH brand.</p>
+<h3>Mesa/Boogie</h3>
+<p><strong>Founded:</strong> 1969, Mill Valley/Petaluma, California
+<strong>Founder:</strong> Randall Smith</p>
+<p>Randall Smith had no formal electronics training but ran a repair shop out of the back of Prune Music, a San Francisco-area store, where he modded Fender amps for local musicians. His first "Boogie" began as a practical joke: he souped up a 20-watt Fender Princeton into a 100-watt combo while keeping its unassuming looks. When Carlos Santana plugged into it and reportedly exclaimed the amp "really boogies," the name stuck. Smith built over 3,000 amps by hand out of his own house before the company moved to a proper facility in Petaluma in 1980. Mesa/Boogie is credited as the first true "boutique" amp builder, and Smith remained the company's master designer until Gibson acquired Mesa in 2021; Smith formally departed the company in 2025 after over 55 years in the business.</p>
+<h3>Orange (Orange Music Electronic Company)</h3>
+<p><strong>Founded:</strong> 1968, London, England
+<strong>Founder:</strong> Clifford "Cliff" Cooper</p>
+<p>Cliff Cooper, trained as a television engineer, opened a struggling recording studio and instrument shop in London's West End in 1968. When equipment suppliers refused to stock his shop — reportedly put off by Cooper's youth and countercultural image — he began designing his own amplifiers out of necessity, partnering with Mat Mathias of Radiocraft to actually build them. Orange's early amps found their way to Peter Green of Fleetwood Mac and, later, Stevie Wonder's "Superstition," establishing the brand's reputation independent of the ongoing Marshall/Vox rivalry. Large-scale Orange production actually paused in 1978, with Cooper building amps in more limited numbers through the 1980s before the brand's modern resurgence.</p>
+<h3>Roland Corporation</h3>
+<p><strong>Founded:</strong> April 18, 1972, Osaka, Japan
+<strong>Founder:</strong> Ikutaro Kakehashi</p>
+<p>Ikutaro Kakehashi had already built and sold one successful electronics company, Ace Electronic Industries, before resigning and founding Roland a month later. He deliberately chose a two-syllable, soft-consonant name — not, as often repeated online, a reference to the French epic poem "Chanson de Roland." Kakehashi founded Boss as a Roland subsidiary the following year, in 1973, and went on to co-develop the MIDI standard in the 1980s, for which he received a Technical Grammy Award in 2013. Roland's JC-120 amp, released in 1975, remains one of the company's most enduring products — a rare case of an amp staying in continuous, largely unchanged production for 50 years.</p>
+<hr />
+<p><em>See our companion piece for each manufacturer's single most legendary product line — the models that built these reputations in the first place.</em></p></article>
+</main>
+<footer class="site">
+<p>Gear Compare is an independent buying-guide site. We may earn a commission from qualifying purchases through links on this site, at no extra cost to you.</p>
+<p>&copy; 2026 Gear Compare</p>
+</footer>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a478951f18718095',t:'MTc5MTQ5ODU0Nw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4bc70e2c01a94c73b74392e4234840661791215815920" integrity="sha512-L0ha0OXavK/8okipN9F8BtP84dg9DUhPERbBXzwI6dgTA55d2+yweo3pn5CSFYs45/r8md2+xvUPtTdvTNRfjA==" data-cf-beacon='{"version":"2024.11.0","token":"b77ad34a835043d88af843216c9ac42e","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>
